@@ -1,0 +1,115 @@
+header {
+  display: none; }
+
+#mine #mine_top {
+  width: 100%;
+  height: 5rem;
+  background: #ffd709;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #mine #mine_top #mine_top_1 {
+    width: 100%;
+    height: 3.8rem;
+    padding: 0.8rem; }
+    #mine #mine_top #mine_top_1 .fa-user-o {
+      width: 2.2rem;
+      line-height: 2.2rem;
+      text-align: center;
+      font-size: 1.7rem;
+      color: #555;
+      background: #fff;
+      border-radius: 500px;
+      float: left; }
+    #mine #mine_top #mine_top_1 div {
+      float: left;
+      margin-left: 0.6rem;
+      padding-top: 0.4rem;
+      color: #fff; }
+      #mine #mine_top #mine_top_1 div span {
+        display: inline-block;
+        position: relative; }
+        #mine #mine_top #mine_top_1 div span img {
+          width: 3rem; }
+        #mine #mine_top #mine_top_1 div span p {
+          height: 0.7rem;
+          color: #e64f43;
+          background: #fff5bf;
+          position: absolute;
+          top: 0.15rem;
+          left: 1rem; }
+    #mine #mine_top #mine_top_1 a {
+      float: right;
+      font-size: 1.5rem;
+      padding-top: 0.4rem;
+      color: #fff; }
+  #mine #mine_top #mine_top_2 {
+    width: 100%;
+    line-height: 1.2rem;
+    overflow: hidden;
+    background: #f3c800; }
+    #mine #mine_top #mine_top_2 a {
+      width: 50%;
+      height: 100%;
+      float: left;
+      text-align: center;
+      color: #fff; }
+    #mine #mine_top #mine_top_2 a:nth-child(1) {
+      border-right: 1px solid #fff; }
+
+#mine #mine_bottom {
+  width: 100%;
+  height: 12rem;
+  margin-top: 5rem;
+  overflow: hidden;
+  overflow-y: scroll; }
+  #mine #mine_bottom::-webkit-scrollbar {
+    width: 0px; }
+  #mine #mine_bottom h2 {
+    width: 100%;
+    line-height: 1.7rem;
+    background: #fff;
+    margin-top: 0.3rem;
+    padding: 0 0.5rem;
+    border-bottom: 1px solid #eee; }
+    #mine #mine_bottom h2 a {
+      float: right;
+      color: #ccc; }
+  #mine #mine_bottom #mine_bottom_ul1 {
+    width: 100%;
+    height: 2.2rem;
+    background: #fff;
+    overflow: hidden; }
+    #mine #mine_bottom #mine_bottom_ul1 li {
+      width: 25%;
+      float: left;
+      text-align: center;
+      font-size: 0.4rem;
+      padding-top: 0.5rem; }
+      #mine #mine_bottom #mine_bottom_ul1 li img {
+        width: 0.6rem; }
+  #mine #mine_bottom #mine_bottom_ul2 {
+    width: 100%;
+    margin-top: 0.4rem;
+    background: #fff;
+    overflow: hidden; }
+    #mine #mine_bottom #mine_bottom_ul2 li {
+      width: 25%;
+      height: 3.5rem;
+      float: left;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+      font-size: 0.4rem;
+      padding-top: 1rem; }
+      #mine #mine_bottom #mine_bottom_ul2 li img {
+        width: 1.2rem; }
+  #mine #mine_bottom p {
+    width: 100%;
+    line-height: 1.7rem;
+    background: #fff;
+    text-align: center;
+    margin: 1.2rem 0; }
+    #mine #mine_bottom p a {
+      display: inline-block;
+      width: 100%;
+      height: 100%; }

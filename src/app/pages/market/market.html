@@ -1,0 +1,84 @@
+<div id="market">
+	<!--商品类型-->
+	<nav>
+		<ul id="market_left">
+			<li ng-repeat="x in nav">
+				<a href="" ng-click="lefts($index,$event)" class="as">{{x.name}}</a>
+			</li>
+		</ul>
+	</nav>
+	<!--排序-->
+	<div id="market_right_top">
+		<div id="market_right_top_1" ng-click="top_1($event)">全部分类﹀</div>
+		<div id="market_right_top_2" ng-click="top_2($event)">综合排序﹀</div>
+	</div>
+
+	
+	<div id="market_right_bottom">
+		<!--排序-->
+		<ul class="top top1">
+			<div>
+				<li>
+					<a href="">全部分类</a>
+				</li>
+			</div>
+		</ul>
+		<ul class="top top2">
+			<div>
+				<li>
+					<a href="">综合排序</a>
+				</li>
+				<li>
+					<a href="">销量最高</a>
+				</li>
+				<li>
+					<a href="">价格最低</a>
+				</li>
+				<li>
+					<a href="">价格最高</a>
+				</li>
+			</div>
+		</ul>
+		<!--商品列表-->
+		<dl class="dls" ng-repeat="x in nav2">
+			<dt><a href="" ng-click="divs2($index,$event)"><img ng-src="{{x.img}}"/></a></dt>
+			<dd>
+				<p class="dls_p1">{{x.name}}</p>
+				<span class="dls_p2">精选</span><span class="dls_p3">买一赠一</span>
+				<p class="dls_p4">{{x.specifics}}</p>
+				<p class="dls_p5">
+					<span class="span1">￥{{x.partner_price}}</span>
+					<span class="span2">￥{{x.market_price}}</span>
+				</p>
+				<p class="dls_p6">
+					<button class="reduce" ng-click="reduce(x)" ng-if="james[x.id].num">▬</button>
+					<span class="num" ng-if="james[x.id].num">{{james[x.id].num}}</span>
+					<button class="add" ng-click="add(x)">✚</button>
+				</p>
+			</dd>
+		</dl>
+	</div>
+
+	<div ui-view></div>
+</div>
+
+<!--详情页-->
+<div id="popup">
+	<h4>
+		<a href="" ng-click="returns()"> &lt; </a>
+		{{popup_1}}
+	</h4>
+	<img ng-src="{{popup_2}}" />
+	<h1>{{popup_3}}</h1>
+	<p id="popup_p1">{{popup_4}}</p>
+	<div id="popup_bottom">
+		<span id="popup_bottom_p1"><a href="" class="fa fa-heart-o"><br/>收藏</a></span>
+		<span id="popup_bottom_p2">添加商品:</span>
+		<span id="popup_bottom_p3">
+			<button ng-click="reduce(x)">▬</button>
+			<span class="num">{{popup_5}}</span>
+			<button ng-click="add(x)">✚</button>
+		</span>
+		<span id="popup_bottom_p4"><a ui-sref="cart" class="fa fa-shopping-cart"></a></span>
+	</div>
+</div>
